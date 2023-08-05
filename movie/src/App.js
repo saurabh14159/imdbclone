@@ -13,9 +13,9 @@ function App() {
         <Header />
         <Routes>
           <Route index element ={<Home />}> </Route>
-          <Route path="movie/:id" element={<Movie />}> </Route>
-          <Route path="movies/:type" element={<MovieList />}> </Route>
-          <Route path="/*" element={<h1> Error Page</h1>}> </Route>
+          <Route exact path="movie/:id" element={<Movie />}> </Route>
+          <Route exact path="movies/:type" element={<MovieList />}> </Route>
+          <Route exact path="/*" element={<h1> Error Page</h1>}> </Route>
         </Routes>
       </Router>
     </div>
